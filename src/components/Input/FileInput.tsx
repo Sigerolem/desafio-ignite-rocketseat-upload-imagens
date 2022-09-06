@@ -23,7 +23,7 @@ import {
   useEffect,
 } from 'react';
 import {
-  FieldError,
+  FieldErrorsImpl,
   FieldValues,
   UseFormSetError,
   UseFormTrigger,
@@ -33,7 +33,7 @@ import { api } from '../../services/api';
 
 export interface FileInputProps {
   name: string;
-  error?: FieldError;
+  error?: FieldErrorsImpl;
   setImageUrl: Dispatch<SetStateAction<string>>;
   localImageUrl: string;
   setLocalImageUrl: Dispatch<SetStateAction<string>>;
